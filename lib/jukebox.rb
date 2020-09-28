@@ -1,16 +1,16 @@
 require 'pry'
 
-songs = [
-      "Phoenix - 1901",
-      "Tokyo Police Club - Wait Up",
-      "Sufjan Stevens - Too Much",
-      "The Naked and the Famous - Young Blood",
-      "(Far From) Home - Tiga",
-      "The Cults - Abducted",
-      "Phoenix - Consolation Prizes",
-      "Harry Chapin - Cats in the Cradle",
-      "Amos Lee - Keep It Loose, Keep It Tight"
-]
+#songs = [
+#      "Phoenix - 1901",
+#      "Tokyo Police Club - Wait Up",
+#      "Sufjan Stevens - Too Much",
+#      "The Naked and the Famous - Young Blood",
+#      "(Far From) Home - Tiga",
+#      "The Cults - Abducted",
+#      "Phoenix - Consolation Prizes",
+#      "Harry Chapin - Cats in the Cradle",
+#      "Amos Lee - Keep It Loose, Keep It Tight"
+#]
     
 def help 
   puts "I accept the following commands:"
@@ -40,7 +40,7 @@ def exit_jukebox
   puts "Goodbye"
 end
 
-def run
+def run songs
   puts "Please enter a command:"
   command = gets.strip
   while (command != "exit") do
