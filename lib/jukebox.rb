@@ -42,6 +42,7 @@ def run
   puts "Please enter a command:"
   command = gets.strip
   while (command != "exit") do
+    
     case command
     when "play"
       play songs
