@@ -30,5 +30,6 @@ def play songs
   elsif (songs.include? user_selection)
     puts "Playing #{user_selection}"
   else
-    puts 
+    puts "Invalid input, please try again"
+  end
 end
