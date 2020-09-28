@@ -52,6 +52,8 @@ def run songs
       help
     when "list"
       list songs
+    when "exit"
+      exit_jukebox
     else
       puts "I didn't understand, sorry"
     end
