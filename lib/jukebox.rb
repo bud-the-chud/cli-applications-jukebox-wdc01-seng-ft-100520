@@ -1,3 +1,5 @@
+require 'pry'
+
 songs = [
       "Phoenix - 1901",
       "Tokyo Police Club - Wait Up",
@@ -42,7 +44,7 @@ def run
   puts "Please enter a command:"
   command = gets.strip
   while (command != "exit") do
-    
+    binding.pry
     case command
     when "play"
       play songs
