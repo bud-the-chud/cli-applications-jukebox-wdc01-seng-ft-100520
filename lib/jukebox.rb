@@ -25,6 +25,7 @@ end
 def play songs
   puts "Please enter a song name or number:"
   user_selection = gets.strip
-  if (user_selection.to_i < songs.length+1 && user_selection.to_i > 0)
-    elsif (user_selection)
+  if (user_selection.match?(/\A-?\d+\Z/) && user_selection.to_i < songs.length+1 && user_selection.to_i > 0)
+  elsif (user_selection)
+    
 end
