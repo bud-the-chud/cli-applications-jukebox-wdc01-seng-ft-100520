@@ -43,8 +43,14 @@ def run
   command = gets.strip
   while (command != "exit") do
     case command
-    while 
+    when "play"
+      play songs
+    when "help"
+      help
+    when "list"
+      list songs
+    else
+      puts "I didn't understand, sorry"
     end
-  
   end
 end
