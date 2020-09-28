@@ -19,5 +19,9 @@ def help
 end
     
 def list songs
-  
+  songs.each_with_index do | song, index |
+    puts "#{index + 1}. #{song}"
+  top_10.each.with_index(1) do | company, index |
+    puts "#{index}. #{company}"
+  end
 end
